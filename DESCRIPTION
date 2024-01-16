@@ -1,0 +1,31 @@
+Package: somatemplate
+Title: A Custom 'pkgdown' Template for R Packages Developed By 'SomaLogic 
+    Operating Co., Inc.'
+Version: 0.0.0.9000
+Authors@R: c(
+    person(given = "Amanda", 
+           family = "Hiser", 
+           role = c("aut", "cre"),
+           email = "ahiser@somalogic.com",
+           comment = c(ORCID = "0000-0002-2121-1873")),
+    person(given = "Stu",
+           family = "Field",
+           role = c("aut", "ctb"),
+           email = "stu.g.field@gmail.com",
+           comment = c(ORCID = "0000-0002-1024-5859")),
+    person(given = "SomaLogic Operating Co., Inc.", 
+           role = c("cph", "fnd"))
+    )
+Description: Provides a customized, cohesive template that can be used across 
+    all of SomaLogic's open-source R packages.
+URL: https://somalogic.github.io/somatemplate/, https://somalogic.com
+BugReports: https://github.com/SomaLogic/somatemplate/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: 
+    knitr
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

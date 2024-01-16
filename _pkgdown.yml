@@ -1,0 +1,61 @@
+url: https://somalogic.github.io/somatemplate
+
+template:
+  package: somatemplate
+  bootstrap: 5
+  bslib:
+    primary: "#0054AD"
+    base_font: {google: {family: "Roboto", wght: [400, 600], ital: [0, 1]}}
+    code_font: {google: "Source Code Pro"}
+    font_scale: 1.2
+    fg: "#172431"
+    bg: "#fcfcfc"
+    border-radius: 0.5rem
+    btn-border-radius: 0.25rem
+    grid-gutter-width: 3rem  # space between text and vertical divider line
+    pkgdown-nav-height: 80px # margin for sidebar text, from top navbar
+
+authors:
+  SomaLogic Operating Co., Inc.:
+    href: http://www.somalogic.com
+  footer:
+    roles: [fnd]
+    text: "was developed by the Bioinformatics Dept. at"
+  sidebar:
+    roles: [cre, fnd]
+    before: "Special :pray: to:"
+    after: ":dna:"
+  before: "[SomaPlotr](https://github.com/SomaLogic/SomaPlotr/) is proudly brought to you by:"
+  after: ":dna:"
+
+home:
+  sidebar:
+    structure: [toc, links, help, oss, license, citation, authors, dev]
+    components:
+      oss:
+        title: Other Software
+        text: >
+          [SomaDataIO](https://somalogic.github.io/SomaDataIO/) <br />
+          [SomaScan.db](https://somalogic.github.io/SomaScan.db/) <br />
+          [Canopy (Python)](https://github.com/SomaLogic/Canopy/) <br />
+          [DataDelve Statistics](https://somalogic.com/datadelve-statistics/)
+      help:
+        title: Getting Help
+        text: >
+          [Ask a question](https://somalogic.github.io/SomaPlotr/SUPPORT.html) <br />
+          [Report a bug](https://github.com/SomaLogic/SomaPlotr/issues)
+  links:
+  - text: Learn more about SomaScan
+    href: http://www.somalogic.com
+  - text: Read SomaScan tech notes
+    href: http://www.somalogic.com/tech-notes/
+
+navbar:
+  type: light
+  bg: none
+  structure:
+    left: [intro, reference, articles, soon, news]
+    right: [search, github]
+
+news:
+  - one_page: true
