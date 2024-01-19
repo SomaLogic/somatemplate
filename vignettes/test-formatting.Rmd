@@ -1,0 +1,83 @@
+---
+title: "Test for Headings and Formatting"
+author: "Amanda Hiser"
+date: "2024-01-19"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Headings}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Heading Level 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Et egestas quis ipsum suspendisse ultrices gravida. Tellus at urna condimentum mattis pellentesque. Tincidunt tortor aliquam nulla facilisi. Pellentesque diam volutpat commodo sed egestas. Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Est sit amet facilisis magna. Consectetur a erat nam at lectus urna. Eu tincidunt tortor aliquam nulla. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Interdum consectetur libero id faucibus nisl tincidunt. Morbi tristique senectus et netus et malesuada. Fermentum iaculis eu non diam phasellus vestibulum lorem sed.
+
+### Bullets
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+-   Bullet 1
+-   Bullet 2
+-   Bullet 3
+-   Bullet 4
+-   Bullet 5
+
+### Numbered Lists
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+1.  Bullet 1
+1.  Bullet 2
+1.  Bullet 3
+1.  Bullet 4
+1.  Bullet 5
+
+### Multilevel Bullets
+
+- Enim praesent elementum facilisis leo vel fringilla est ullamcorper. 
+    + Pulvinar mattis nunc sed blandit. Urna neque viverra justo necultrices dui sapien eget. 
+- Risus feugiat in ante metus. Purus ut faucibus pulvinar elementum integer enim. 
+    + Tellus mauris a diam maecenas sed enim. Tincidunt dui ut ornare lectus sit amet est. 
+- Potenti nullam ac tortor vitae purus faucibus. Quis commodo odio aenean sed adipiscing diam. 
+    + Pellentesque habitant morbi tristique senectus et. Dapibus ultrices in iaculis nunc sed. 
+    
+### Indented Bullets
+
+Tellus cras adipiscing enim eu turpis egestas pretium aenean. 
+    
+    + Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. 
+    + Semper risus in hendrerit gravida rutrum quisque non tellus orci. 
+    + Integer malesuada nunc vel risus commodo viverra. 
+    + Justo donec enim diam vulputate ut pharetra sit. 
+    + Semper quis lectus nulla at volutpat diam. 
+    
+Lacus viverra vitae congue eu consequat ac felis. 
+
+## Heading Level 2 (with `code` in title)
+
+Quis commodo odio aenean sed adipiscing diam. Pellentesque habitant morbi 
+tristique senectus et. Dapibus ultrices in iaculis nunc sed. Neque sodales ut 
+etiam sit amet nisl purus in mollis. Morbi tempus iaculis urna id volutpat 
+lacus laoreet non curabitur. Justo nec ultrices dui sapien. In ornare quam 
+viverra orci. Aenean euismod elementum nisi quis. Vitae purus faucibus ornare 
+suspendisse sed nisi lacus sed viverra.
+
+#### Heading Level 4
+
+Lacus viverra vitae congue eu consequat ac felis. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. 
+
+Vulputate dignissim suspendisse in est ante in nibh mauris. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Integer malesuada nunc vel risus commodo viverra. Justo donec enim diam vulputate ut pharetra sit. Semper quis lectus nulla at volutpat diam. Ipsum consequat nisl vel pretium lectus quam id leo in. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Purus non enim praesent elementum facilisis leo vel fringilla. Consectetur libero id faucibus nisl tincidunt. Massa enim nec dui nunc mattis enim ut tellus elementum. Turpis tincidunt id aliquet risus feugiat in ante metus.
+
+Vulputate dignissim suspendisse in est ante in nibh mauris. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Vulputate ut pharetra sit amet aliquam id diam maecenas ultricies. Semper risus in hendrerit gravida rutrum quisque non tellus orci. Integer malesuada nunc vel risus commodo viverra. Justo donec enim diam vulputate ut pharetra sit. Semper quis lectus nulla at volutpat diam. Ipsum consequat nisl vel pretium lectus quam id leo in. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Purus non enim praesent elementum facilisis leo vel fringilla. Consectetur libero id faucibus nisl tincidunt. Massa enim nec dui nunc mattis enim ut tellus elementum. Turpis tincidunt id aliquet risus feugiat in ante metus.
+
+##### Heading Level 5
+
+Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. 
