@@ -15,7 +15,20 @@ you do not use it for your own personal package.
 
 ## Installation
 
-`somatemplate` can be installed from GitHub as follows:
+`somatemplate` is not currently available to the public, i.e. it is a
+private/internal GitHub repo. To install the package, it must be cloned
+and installed locally:
+
+``` bash
+git clone git@github.com:SomaLogic/somatemplate.git
+```
+
+``` r
+install.packages("<filepath to somatemplate>", repos = NULL, type = "source")
+```
+
+Once made public, `somatemplate` can be installed from GitHub as
+follows:
 
 ``` r
 remotes::install_github("SomaLogic/somatemplate")

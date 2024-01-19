@@ -22,7 +22,19 @@ and [rotemplate](https://docs.ropensci.org/rotemplate/).
 
 ## Installation
 
-`somatemplate` can be installed from GitHub as follows:
+`somatemplate` is not currently available to the public, i.e. it is a 
+private/internal GitHub repo. To install the package, it must be cloned
+and installed locally:
+
+```{bash clone-repo, eval=FALSE}
+git clone git@github.com:SomaLogic/somatemplate.git
+```
+
+```{r install-local, eval=FALSE}
+install.packages("<filepath to somatemplate>", repos = NULL, type = "source")
+```
+
+Once made public, `somatemplate` can be installed from GitHub as follows:
 
 ```{r eval=FALSE}
 remotes::install_github("SomaLogic/somatemplate")
