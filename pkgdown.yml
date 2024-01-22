@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   test-code: test-code.html
   test-formatting: test-formatting.html
-last_built: 2024-01-19T19:45Z
+last_built: 2024-01-22T21:05Z
 urls:
   reference: https://somalogic.github.io/somatemplate/reference
   article: https://somalogic.github.io/somatemplate/articles
