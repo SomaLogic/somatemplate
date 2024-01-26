@@ -4,7 +4,7 @@ author: "Amanda Hiser"
 date: "2024-01-19"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Headings}
+  %\VignetteIndexEntry{Test for Headings and Formatting}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

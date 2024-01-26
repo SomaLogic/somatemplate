@@ -15,32 +15,26 @@ template:
 authors:
   SomaLogic Operating Co., Inc.:
     href: http://www.somalogic.com
-  footer:
-    roles: [fnd]
-    text: "was developed by the Bioinformatics Dept. at"
   sidebar:
     roles: [cre, fnd]
     before: "Special :pray: to:"
     after: ":dna:"
-  before: "[SomaPlotr](https://github.com/SomaLogic/SomaPlotr/) is proudly brought to you by:"
+  before: "[somatemplate](https://github.com/SomaLogic/somatemplate/) is proudly brought to you by:"
   after: ":dna:"
 
 home:
   sidebar:
-    structure: [links, help, oss, license, citation, authors, dev]
+    # html: inst/pkgdown/templates/sidebar.html # Use HTML file for bespoke sidebar
+    structure: [links, oss, license, citation, authors, dev]
     components:
       oss:
         title: Other Software
         text: >
           [SomaDataIO](https://somalogic.github.io/SomaDataIO/) <br />
           [SomaScan.db](https://somalogic.github.io/SomaScan.db/) <br />
+          [SomaPlotr](https://somalogic.github.io/SomaPlotr/) <br />
           [Canopy (Python)](https://github.com/SomaLogic/Canopy/) <br />
           [DataDelve Statistics](https://somalogic.com/datadelve-statistics/)
-      help:
-        title: Getting Help
-        text: >
-          [Ask a question](https://somalogic.github.io/SomaPlotr/SUPPORT.html) <br />
-          [Report a bug](https://github.com/SomaLogic/SomaPlotr/issues)
   links:
   - text: Learn more about SomaScan
     href: http://www.somalogic.com
