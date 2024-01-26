@@ -86,17 +86,17 @@
 <div class="section level2">
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
-<p><code>somatemplate</code> provides a custom <a href="https://pkgdown.r-lib.org/index.html" class="external-link">pkgdown</a> template for SomaLogic’s R packages. This package is designed to provide a cohesive visual identity for packages developed by SomaLogic, and we kindly request that you do not use it for your own personal package.</p>
-<p><code>somatemplate</code> was inspired primarily by <a href="https://tidytemplate.tidyverse.org/" class="external-link">tidytemplate</a> and <a href="https://docs.ropensci.org/rotemplate/" class="external-link">rotemplate</a>.</p>
+<p><code>somatemplate</code> provides a custom <a href="https://pkgdown.r-lib.org/index.html" class="external-link">pkgdown</a> template for R packages developed by SomaLogic Operating Co., Inc. This package is designed to provide a cohesive visual identity for packages developed by SomaLogic, and we kindly request that you do not use it for your own personal package.</p>
+<p><code>somatemplate</code> was inspired by <a href="https://tidytemplate.tidyverse.org/" class="external-link">tidytemplate</a> and <a href="https://docs.ropensci.org/rotemplate/" class="external-link">rotemplate</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p><code>somatemplate</code> is not currently available to the public, i.e. it is a private/internal GitHub repo. To install the package, it must be cloned and installed locally:</p>
+<p><code>somatemplate</code> is not currently available to the public, as it is a private/internal GitHub repo. To install the package, it must be cloned and installed locally:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone git@github.com:SomaLogic/somatemplate.git</span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"&lt;filepath to somatemplate&gt;"</span>, repos <span class="op">=</span> <span class="cn">NULL</span>, type <span class="op">=</span> <span class="st">"source"</span><span class="op">)</span></span></code></pre></div>
-<p>Once made public, <code>somatemplate</code> can be installed from GitHub as follows:</p>
+<p>Once made public, <code>somatemplate</code> could be installed from GitHub as follows (please note that this method does not currently work):</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"SomaLogic/somatemplate"</span><span class="op">)</span></span></code></pre></div>
 </div>
@@ -104,7 +104,7 @@
 <h2 id="usage">
 <a id="usage"></a>Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
-<p>To use <code>somatemplate</code> for a <code>pkgdown</code> site, ensure that the package is installed, and that the <code>DESCRIPTION</code> contains the following line:</p>
+<p>To use <code>somatemplate</code> for a <code>pkgdown</code> site, ensure that the package is installed, and that the <code>DESCRIPTION</code> file contains the following line:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">Config</span><span class="op">/</span><span class="va">Needs</span><span class="op">/</span><span class="va">website</span><span class="op">:</span> <span class="va">SomaLogic</span><span class="op">/</span><span class="va">somatemplate</span></span></code></pre></div>
 <p>Then, insert the following code into the pkgdown config file, <code>_pkgdown.yml</code> (or create a new one, if it doesn’t exist already):</p>
@@ -114,11 +114,10 @@
 <span>  <span class="va">bootstrap</span><span class="op">:</span> <span class="fl">5</span></span></code></pre></div>
 <p>If you’re updating a previously made pkgdown config file to use <code>somatemplate</code>, use the following list to enable use of the template:</p>
 <ul>
-<li>Run <code>usethis::use_pkgdown_github_pages()</code>
-</li>
-<li>Update <code>DESCRIPTION</code> to include <code>Config/Needs/website: SomaLogic/somatemplate</code>, as described in <a href="#usage">Usage</a> above</li>
-<li>Update <code>_pkgdown.yml</code> to reference <code>somatemplate</code>, as described above</li>
-<li>Optional: Update the <code>NEWS.md</code> file to describe use of <code>somatemplate</code>
+<li>Run <code>usethis::use_pkgdown_github_pages()</code> (note: this step is only necessary for new repositories that do not have a previously made pkgdown site)</li>
+<li>Update the <code>DESCRIPTION</code> file, as described in <a href="#usage">Usage</a> above</li>
+<li>Update <code>_pkgdown.yml</code> to reference <code>somatemplate</code>, as described in <a href="#usage">Usage</a> above</li>
+<li>Optional: Update the <code>NEWS.md</code> file to describe the new incorporation of <code>somatemplate</code>
 </li>
 </ul>
 </div>
@@ -126,17 +125,18 @@
 <h2 id="package-structure">Package Structure<a class="anchor" aria-label="anchor" href="#package-structure"></a>
 </h2>
 <p>This <code>pkgdown</code> template appears to be structured like a normal R package, but differs in a few key ways:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> inst</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__pkgdown</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>       <span class="sc">|</span>__ _pkgdown.yml    <span class="co"># Configuration YAML file for pkgdown site, including customized sidebar links</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>       <span class="sc">|</span>__templates        <span class="co"># Custom HTML templates that override pkgdown defaults</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>          <span class="sc">|</span>__footer.html</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>       <span class="sc">|</span>__extra.scss       <span class="co"># Extra SCSS code that will be copied into the rendered site</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> R</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__test<span class="sc">-</span>function.R.    <span class="co"># Example R function for template testing purposes only</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> vignettes</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__test<span class="sc">-</span>code.Rmd       <span class="co"># Example vignette for template testing purposes only</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__test<span class="sc">-</span>formatting.Rmd <span class="co"># Example vignette for template testing purposes only</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> _pkgdown.yml           <span class="co"># Configuration YAML file for *this* repository only</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> inst</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__pkgdown</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>       <span class="sc">|</span>__ _pkgdown.yml    <span class="co"># Configuration YAML file for pkgdown sites, including customized sidebar links</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>       <span class="sc">|</span>__templates        <span class="co"># Custom HTML templates that override pkgdown defaults</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>          <span class="sc">|</span>__footer.html</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>       <span class="sc">|</span>__extra.scss       <span class="co"># Extra SCSS code that will be copied into the rendered site</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> R</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__test<span class="sc">-</span>function.R.    <span class="co"># Example R function for template testing purposes only</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span> vignettes</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__test<span class="sc">-</span>code.Rmd       <span class="co"># Example vignette for template testing purposes only</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">|</span>__test<span class="sc">-</span>formatting.Rmd <span class="co"># Example vignette for template testing purposes only</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
@@ -146,13 +146,6 @@
 <li><a href="https://github.com/SomaLogic/somatemplate/issues" class="external-link">Report a bug</a></li>
 <li><a href="http://www.somalogic.com" class="external-link">Learn more about SomaScan</a></li>
 <li><a href="http://www.somalogic.com/tech-notes/" class="external-link">Read SomaScan tech notes</a></li>
-</ul>
-</div>
-
-<div class="getting-help">
-<h2 data-toc-skip>Getting Help</h2>
-<ul class="list-unstyled">
-<li><p><a href="https://somalogic.github.io/SomaPlotr/SUPPORT.html" class="external-link">Ask a question</a> <br><a href="https://github.com/SomaLogic/SomaPlotr/issues" class="external-link">Report a bug</a></p></li>
 </ul>
 </div>
 
